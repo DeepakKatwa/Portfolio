@@ -618,6 +618,49 @@
 
   .cert-year { font-size: 0.78rem; color: var(--light); font-weight: 500; }
 
+  .cert-card {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .cert-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent2);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: gap 0.2s;
+  }
+
+  a.cert-card:hover .cert-view-btn { gap: 10px; }
+
+  .btn-cert {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    background: rgba(200,150,62,0.1);
+    border: 1px solid rgba(200,150,62,0.3);
+    color: var(--accent2);
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .btn-cert:hover {
+    background: rgba(200,150,62,0.18);
+    transform: translateY(-2px);
+  }
+
+  .exp-actions { margin-top: 16px; }
+
   /* CONTACT */
   .contact-grid {
     display: grid;
@@ -713,7 +756,7 @@
         Passionate about software development, AI, and building real-world applications.
       </p>
       <div class="hero-ctas">
-        <a href="mailto:deepakkatwa71@gmail.com" class="btn-primary">Get In Touch</a>
+        <a href="/cdn-cgi/l/email-protection#c8acadadb8a9a3a3a9bcbfa9fff988afa5a9a1a4e6aba7a5" class="btn-primary">Get In Touch</a>
         <a href="Deepak_Katwa_Resume.pdf" download class="btn-gold">Download Resume ↓</a>
         <a href="https://github.com/DeepakKatwa" target="_blank" class="btn-ghost">GitHub →</a>
       </div>
@@ -835,6 +878,43 @@
 
 <hr class="divider">
 
+<section id="experience"> 
+  <div class="section-header">
+    <div class="section-eyebrow">Work History</div>
+    <h2 class="section-title">Experience</h2>
+  </div>
+
+  <div class="exp-timeline">
+
+    <!-- Internship Experience -->
+    <div class="exp-item">
+      <div class="exp-card">
+
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">AI & ML Intern</div>
+            <div class="exp-company">ThinqTechno Systems Pvt. Ltd., Bangalore</div>
+          </div>
+          <span class="exp-date">Jan 2024 – Apr 2024</span>
+        </div>
+
+        <ul class="exp-list">
+          <li>Successfully completed a 16-week internship in Artificial Intelligence and Machine Learning.</li>
+          <li>Worked on real-world AI/ML projects involving data analysis and model development.</li>
+          <li>Gained hands-on experience in machine learning concepts and practical implementation.</li>
+          <li>Demonstrated strong problem-solving skills, professionalism, and teamwork.</li>
+        </ul>
+
+        <!-- PDF Certificate -->
+        <div class="exp-actions">
+          <a href="Inteship ceritficate diploma (1).pdf" target="_blank" class="btn-cert">
+            📄 View Internship Certificate
+          </a>
+        </div>
+
+      </div>
+    </div>
+    
 <hr class="divider">
 
 <section id="projects">
@@ -881,21 +961,30 @@
     <h2 class="section-title">Certifications</h2>
   </div>
   <div class="certs-grid">
-    <div class="cert-card">
+    <a class="cert-card" href="Data_Structures_Algorithms.pdf" target="_blank">
       <div class="cert-issuer">Infosys</div>
       <div class="cert-name">Data Structures & Algorithms</div>
-      <div class="cert-year">2024</div>
-    </div>
-    <div class="cert-card">
+      <div class="cert-year">Nov 2024</div>
+      <div class="cert-view-btn">View Certificate →</div>
+    </a>
+    <a class="cert-card" href="OCI_AI_Foundations_Associate.pdf" target="_blank">
       <div class="cert-issuer">Oracle</div>
-      <div class="cert-name">OCI AI Foundation Associate</div>
-      <div class="cert-year">2025</div>
-    </div>
-    <div class="cert-card">
+      <div class="cert-name">OCI AI Foundations Associate</div>
+      <div class="cert-year">Sep 2025</div>
+      <div class="cert-view-btn">View Certificate →</div>
+    </a>
+    <a class="cert-card" href="Web_Development.pdf" target="_blank">
       <div class="cert-issuer">Sololearn</div>
-      <div class="cert-name">Web Development Bootcamp</div>
-      <div class="cert-year">2026</div>
-    </div>
+      <div class="cert-name">Web Development</div>
+      <div class="cert-year">Mar 2026</div>
+      <div class="cert-view-btn">View Certificate →</div>
+    </a>
+    <a class="cert-card" href="HackerRank_Python.pdf" target="_blank">
+      <div class="cert-issuer">HackerRank</div>
+      <div class="cert-name">Python (Basic)</div>
+      <div class="cert-year">Mar 2026</div>
+      <div class="cert-view-btn">View Certificate →</div>
+    </a>
   </div>
 </section>
 
@@ -910,16 +999,16 @@
     <div>
       <p class="contact-text">I'm currently open to new opportunities — internships, freelance projects, or full-time roles. If you have something in mind, I'd love to hear from you. Even just want to say hi? My inbox is always open.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="mailto:deepakkatwa71@gmail.com" class="btn-primary">Say Hello 👋</a>
+        <a href="/cdn-cgi/l/email-protection#c0a4a5a5b0a1ababa1b4b7a1f7f180a7ada1a9aceea3afad" class="btn-primary">Say Hello 👋</a>
         <a href="Deepak_Katwa_Resume.pdf" download class="btn-gold">Download Resume ↓</a>
       </div>
     </div>
     <div class="contact-links">
-      <a href="mailto:deepakkatwa71@gmail.com" class="contact-link">
+      <a href="/cdn-cgi/l/email-protection#cfabaaaabfaea4a4aebbb8aef8fe8fa8a2aea6a3e1aca0a2" class="contact-link">
         <span class="contact-icon">✉️</span>
         <div>
           <div class="contact-label">Email</div>
-          <div class="contact-value">deepakkatwa71@gmail.com</div>
+          <div class="contact-value"><span class="__cf_email__" data-cfemail="3c5859594c5d57575d484b5d0b0d7c5b515d5550125f5351">[email&#160;protected]</span></div>
         </div>
       </a>
       <a href="https://www.linkedin.com/in/deepak-katwa-046205241/" target="_blank" class="contact-link">
@@ -933,16 +1022,4 @@
         <span class="contact-icon">🐙</span>
         <div>
           <div class="contact-label">GitHub</div>
-          <div class="contact-value">DeepakKatwa</div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 Deepak Katwa · Crafted with care · All rights reserved · <span>deepakkatwa71@gmail.com</span>
-</footer>
-
-</body>
-</html>
+          <div class=
